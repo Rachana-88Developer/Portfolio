@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Background — Rachana Hinge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+<canvas id="neural-canvas"></canvas>
+
+<nav id="navbar">
+    <div class="section-inner" style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <a href="index.html" class="logo">RH</a>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.8; filter: drop-shadow(0 0 5px var(--accent-gold));">
+                <path d="M12 22C12 22 20 18 20 12C20 6 12 2 12 2C12 2 4 6 4 12C4 18 12 22 12 22Z" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 18C12 18 17 15 17 12C17 9 12 6 12 6C12 6 7 9 7 12C7 15 12 18 12 18Z" stroke="url(#goldGradient)" stroke-width="1" stroke-linecap="round"/>
+                <defs><linearGradient id="goldGradient" x1="4" y1="2" x2="20" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#c8a96e"/><stop offset="1" stop-color="#e8c98a"/></linearGradient></defs>
+            </svg>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="background.html" class="active">Background</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certs</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div id="nav-actions" style="display:flex; gap:10px;"></div>
+    </div>
+</nav>
+
+<section style="padding-top:160px;">
+    <div class="section-inner">
+        <div class="section-label">Where I've Trained & Worked</div>
+        <div class="section-title">Professional Background</div>
+        <div class="section-line"></div>
+
+        <div id="experience">
+            <!-- IEEE -->
+            <div class="exp-card reveal">
+                <div class="exp-left">
+                  <div>
+                    <div class="exp-company">IEEE</div>
+                    <div class="exp-duration">Jun 2026 – Jul 2026</div>
+                    <div style="font-size:.85rem;color:var(--text-secondary);margin-top:.4rem">Pune, India</div>
+                  </div>
+                  <span class="exp-type" style="display:inline-block;background:rgba(200,169,110,.1);color:var(--accent-gold);border:1px solid rgba(200,169,110,.2);border-radius:50px;font-size:.65rem;padding:.3rem .9rem;text-transform:uppercase;margin-top:1.5rem;">Internship</span>
+                </div>
+                <div class="exp-right">
+                  <div class="exp-role">AI/ML Research Engineer Intern</div>
+                  <ul class="exp-list">
+                    <li>Leading <strong>healthcare AI research</strong> — building ML models for clinical data analysis, patient outcome prediction, and medical NLP.</li>
+                    <li>Applying <strong>transformer-based deep learning</strong> to raw clinical inputs for medical NLP insights.</li>
+                    <li>Authoring research for <strong>IEEE publication</strong> covering benchmarks and applicability.</li>
+                    <li>🏆 Improved diagnostic accuracy by applying NLP to unstructured EHR records.</li>
+                    <li>🏆 Developed a benchmark pipeline that reduced model evaluation cycle time by ~40%.</li>
+                  </ul>
+                </div>
+            </div>
+            
+            <!-- Prime Equities -->
+            <div class="exp-card reveal">
+                <div class="exp-left">
+                  <div>
+                    <div class="exp-company">Prime Equities LLC</div>
+                    <div style="font-size:.75rem;color:var(--text-secondary);margin-top:.3rem">[PrimeNumerics]</div>
+                    <div class="exp-duration">Jan 2026 – Apr 2026</div>
+                    <div style="font-size:.85rem;color:var(--text-secondary);margin-top:.4rem">Remote, USA</div>
+                  </div>
+                  <span class="exp-type">Remote Internship</span>
+                </div>
+                <div class="exp-right">
+                  <div class="exp-role">AI/ML Intern — AI Tools & Research Engineer</div>
+                  <ul class="exp-list">
+                    <li>Architected <strong>multi-layered RAG pipelines</strong> using BERT and MCP Servers.</li>
+                    <li>Integrated Neo4j graph caching to eliminate <strong>LLM hallucinations</strong>.</li>
+                    <li>Designed end-to-end <strong>autonomous workflows</strong> linking vector search and structured data.</li>
+                    <li>🏆 Reduced hallucination rate for 1000+ daily queries.</li>
+                    <li>🏆 Automated financial research pipelines, cutting analyst manual effort by 60%.</li>
+                  </ul>
+                </div>
+            </div>
+
+            <!-- Ysaas -->
+            <div class="exp-card reveal">
+                <div class="exp-left">
+                  <div>
+                    <div class="exp-company">Ysaas Infotech</div>
+                    <div class="exp-duration">Jun 2023 – Jul 2023</div>
+                    <div style="font-size:.85rem;color:var(--text-secondary);margin-top:.4rem">Pune, India</div>
+                  </div>
+                  <span class="exp-type">Internship</span>
+                </div>
+                <div class="exp-right">
+                  <div class="exp-role">React.js Intern</div>
+                  <ul class="exp-list">
+                    <li>Built responsive UI components using <strong>React.js</strong> and Agile methodologies.</li>
+                    <li>Maintained code quality through unit testing and GitHub/GitLab control.</li>
+                    <li>🏆 Delivered mobile-optimized features with zero regressions.</li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" style="margin-top:100px;">
+            <div class="section-title" style="font-size:2.5rem;">Education</div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <span class="badge" style="background:rgba(200,169,110,0.1); color:var(--accent-gold); padding:0.4rem 1rem; border-radius:50px; font-size:0.7rem; text-transform:uppercase; margin-bottom:1rem; display:inline-block;">🎓 Ongoing</span>
+                    <div class="edu-qual">BTech — Computer Science & Engineering</div>
+                    <div class="edu-inst">DESPU, Pune</div>
+                    <div class="edu-meta">2024 – 2027 · CGPA: 8.2 · Sem 5 SGPA: 8.41</div>
+                    <ul class="edu-list">
+                        <li>Consistently strong academic performance in AI/ML specialisation.</li>
+                        <li>Coursework: Data Structures, Algorithms, Machine Learning, NLP.</li>
+                        <li>Active in clinical AI research for upcoming IEEE-track publications.</li>
+                    </ul>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="badge" style="background:rgba(200,169,110,0.1); color:var(--accent-gold); padding:0.4rem 1rem; border-radius:50px; font-size:0.7rem; text-transform:uppercase; margin-bottom:1rem; display:inline-block;">✅ Completed</span>
+                    <div class="edu-qual">Diploma — Computer Technology</div>
+                    <div class="edu-inst">Sinhgad Institute SVCP Polytechnic, Pune</div>
+                    <div class="edu-meta">2021 – 2024 · GPA: 7.69</div>
+                    <ul class="edu-list">
+                        <li>Foundation in C, C++, Java, and programming fundamentals.</li>
+                        <li>Completed practical modules in web development and database design.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT -->
+<div class="bot-toggle">
+    <img src="assets/rachu-avatar.png" alt="Rachu" class="toggle-avatar">
+    <span class="toggle-name">Rachu AI</span>
+</div>
+<div class="bot-window">
+    <div class="bot-header">
+        <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/rachu-avatar.png" alt="AI Avatar" class="bot-avatar">
+            <span>Rachana</span>
+        </div>
+        <div class="bot-close" style="cursor:pointer; opacity:0.6;"><i class="fas fa-times"></i></div>
+    </div>
+    <div class="bot-messages" id="bot-messages">
+        <div class="bot-msg ai">Hi. Ready.</div>
+    </div>
+    <div class="bot-input-area">
+        <input type="text" class="bot-input" id="bot-input" placeholder="Ask about her projects...">
+        <button class="bot-send" id="bot-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+
+<footer>
+    <div class="section-inner">
+        <div class="footer-name">Rachana Hinge</div>
+        <div class="footer-copy">© 2026 Engineering the Future of AI. Built with precision and passion.</div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
